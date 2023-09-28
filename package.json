@@ -1,0 +1,43 @@
+{
+  "name": "@henrydf/mp-redux-saga",
+  "version": "1.2.3",
+  "description": "mp version of redux-saga",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "effects.d.ts",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "exports": {
+    "./effects": {
+      "types": "./effects.d.ts",
+      "default": "./effects.js"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrydf/mp-redux-saga.git"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "rollup": "^3.29.4",
+    "rollup-plugin-copy": "^3.5.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "redux-saga": "1.2.3"
+  }
+}
