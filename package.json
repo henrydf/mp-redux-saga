@@ -1,6 +1,6 @@
 {
   "name": "@henrydf/mp-redux-saga",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "mp version of redux-saga",
   "main": "dist/index.js",
   "files": [
