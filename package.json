@@ -6,7 +6,6 @@
   "files": [
     "dist",
     "index.d.ts",
-    "effects.d.ts",
     "package.json"
   ],
   "scripts": {
@@ -15,12 +14,8 @@
   "author": "",
   "license": "MIT",
   "exports": {
-    "./effects": {
-      "types": "./effects.d.ts",
-      "default": "./effects.js"
-    },
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./index.d.ts",
       "default": "./dist/index.js"
     },
     "./package.json": "./package.json"

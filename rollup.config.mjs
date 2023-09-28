@@ -5,8 +5,7 @@ import copy from 'rollup-plugin-copy';
 
 export default {
   input: {
-    index: 'node_modules/redux-saga/dist/redux-saga-core.esmodules-browsers.min.js',
-    effects: 'node_modules/redux-saga/dist/redux-saga-effects.esmodules-browsers.min.js',
+    index: 'index.js',
   },
   output: {
     dir: 'dist',
@@ -16,8 +15,6 @@ export default {
   plugins: [
     copy({
       targets: [
-        { src: 'node_modules/redux-saga/index.d.ts', dest: '.' },
-        { src: 'node_modules/redux-saga/effects.d.ts', dest: '.' },
       ],
     }),
     json(),
